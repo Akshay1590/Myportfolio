@@ -1,0 +1,103 @@
+.Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+
+}
+.Contactt{
+    position: relative;
+}
+.Contactt h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.Contactt img{
+    z-index: -1;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+.Contacts{
+    display: flex;
+    gap: 150px;
+}
+.ContactL{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.ContactL h1{
+    font-size: 80px;
+    font-weight: 800;
+    background: linear-gradient(270deg ,purple 30% ,blue 30% ,yellow 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+}
+.ContactL p{
+    max-width: 550px;
+    color:white;
+    font-size: 20px;
+    line-height: 35px;
+
+}
+.Contact-details{
+    display: flex;
+flex-direction: column;
+gap: 30px;
+color:white;
+font-size: 26px;
+}
+.ContactDetail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.ContactR{
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    gap: 20px;
+}
+.ContactR label{
+    color: white;
+    font-size: 22px;
+  font-weight: 600;
+}
+.ContactR input{
+    border: none;
+    width: 700px;
+    height: 60px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background-color: #d8d8da;
+    color: #A0a0a0;
+    }
+    .ContactR textarea{
+        width: 700px;
+        padding: 10px ;
+    }
+    .ContactSubmit{
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #3498db;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    
+    }
+    .ContactSubmit:hover{
+        background-color: #2980b9;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    }

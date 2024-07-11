@@ -1,0 +1,67 @@
+.about-me-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 80px 220px;
+}
+.AboutT{
+    position: relative;
+
+}
+.AboutT h1{
+    padding: 0 30px;
+    font-size: 600;
+    font-size: 80px;
+}
+.AboutT img{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    z-index: -1;
+}
+.About-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.Apara{
+    margin-top: 20%;
+    margin-left: 5%;
+    font: 20px;
+    font-weight: 500;
+}
+.AboutSkills{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    
+}
+.AboutSkills .Aboutskill{
+  display: flex;
+    align-items: center;
+    transition: 0.3s;
+    gap: 50px;
+}
+.AboutSkill p{
+    min-width: 150px;
+    font-weight: 500;
+    font-size: 25px;
+
+    
+}
+.AboutSkills hr{
+    outline: none;
+    border: none;
+    width: 50px;
+    height:8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg ,orange -5.09% , #B415FF);
+    
+}
+.p1{
+    margin-left: 20px;
+}

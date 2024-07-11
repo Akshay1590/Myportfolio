@@ -1,0 +1,66 @@
+.Hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.Hero-action {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.Hero-action:hover {
+    background: linear-gradient(to right, #7b9afe, #ff5ffc);
+    transform: scale(1.05);
+  }
+  .Hero-Resume{
+    background: linear-gradient(to right, gray, green);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+
+  .Hero-Resume:hover {
+    background: linear-gradient(to right, #7b9afe, #ff5ffc);
+    transform: scale(1.05);
+  }
+  .intro {
+    background:black;
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+
+  }
+
+  .intro p {
+    font-size: 1.2rem;
+    color: white;
+  }
+
