@@ -1,66 +1,145 @@
 .Hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
 }
 
-
 .Hero-action {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    border: none;
-    border-radius: 25px;
-    color: white;
-    padding: 15px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
 }
 
 .Hero-action:hover {
-    background: linear-gradient(to right, #7b9afe, #ff5ffc);
-    transform: scale(1.05);
-  }
-  .Hero-Resume{
-    background: linear-gradient(to right, gray, green);
-    border: none;
-    border-radius: 25px;
-    color: white;
-    padding: 15px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
-  }
+  background: linear-gradient(to right, #7b9afe, #ff5ffc);
+  transform: scale(1.05);
+}
 
-  .Hero-Resume:hover {
-    background: linear-gradient(to right, #7b9afe, #ff5ffc);
-    transform: scale(1.05);
-  }
-  .intro {
-    background:black;
-    padding: 20px 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.Hero-Resume {
+  background: linear-gradient(to right, gray, green);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
 
+.Hero-Resume:hover {
+  background: linear-gradient(to right, #7b9afe, #ff5ffc);
+  transform: scale(1.05);
+}
+
+.intro {
+  background: black;
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .Hero-action,
+  .Hero-Resume {
+      padding: 12px 25px;
+      font-size: 15px;
   }
 
   .intro h1 {
-    font-size: 2.5rem;
-    background: linear-gradient(45deg, #ff7e5f, #feb47b);
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-bottom: 10px;
-
+      font-size: 2.2rem;
   }
 
   .intro p {
-    font-size: 1.2rem;
-    color: white;
+      font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .Hero-action,
+  .Hero-Resume {
+      padding: 10px 20px;
+      font-size: 14px;
   }
 
+  .intro {
+      padding: 15px 30px;
+  }
+
+  .intro h1 {
+      font-size: 2rem;
+  }
+
+  .intro p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Hero {
+      gap: 20px;
+  }
+
+  .Hero-action,
+  .Hero-Resume {
+      padding: 8px 15px;
+      font-size: 13px;
+  }
+
+  .intro {
+      padding: 10px 20px;
+  }
+
+  .intro h1 {
+      font-size: 1.8rem;
+  }
+
+  .intro p {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .Hero-action,
+  .Hero-Resume {
+      padding: 6px 10px;
+      font-size: 12px;
+  }
+
+  .intro {
+      padding: 5px 10px;
+  }
+
+  .intro h1 {
+      font-size: 1.5rem;
+  }
+
+  .intro p {
+      font-size: 0.8rem;
+  }
+}

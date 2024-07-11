@@ -6,62 +6,158 @@
     gap: 80px;
     margin: 80px 220px;
 }
+
 .AboutT{
     position: relative;
-
 }
+
 .AboutT h1{
     padding: 0 30px;
     font-size: 600;
     font-size: 80px;
 }
+
 .AboutT img{
     position: absolute;
     bottom: 0;
-    right:0;
+    right: 0;
     z-index: -1;
 }
+
 .About-section{
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
+
 .Apara{
     margin-top: 20%;
     margin-left: 5%;
-    font: 20px;
+    font-size: 20px;
     font-weight: 500;
 }
-.AboutSkills{
 
+.AboutSkills{
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 40px;
-    
 }
+
 .AboutSkills .Aboutskill{
-  display: flex;
+    display: flex;
     align-items: center;
     transition: 0.3s;
     gap: 50px;
 }
+
 .AboutSkill p{
     min-width: 150px;
     font-weight: 500;
     font-size: 25px;
-
-    
 }
+
 .AboutSkills hr{
     outline: none;
     border: none;
     width: 50px;
-    height:8px;
+    height: 8px;
     border-radius: 50px;
-    background: linear-gradient(264deg ,orange -5.09% , #B415FF);
-    
+    background: linear-gradient(264deg, orange -5.09%, #B415FF);
 }
+
 .p1{
     margin-left: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .about-me-container {
+        margin: 60px 150px;
+        gap: 60px;
+    }
+
+    .AboutT h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-me-container {
+        margin: 40px 100px;
+        gap: 40px;
+    }
+
+    .AboutT h1 {
+        font-size: 60px;
+    }
+
+    .Apara {
+        margin-top: 15%;
+        font-size: 18px;
+    }
+
+    .AboutSkills .Aboutskill {
+        gap: 40px;
+    }
+
+    .AboutSkill p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me-container {
+        margin: 20px 50px;
+        gap: 30px;
+    }
+
+    .About-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .Apara {
+        margin-top: 10%;
+        font-size: 16px;
+    }
+
+    .AboutT h1 {
+        font-size: 50px;
+    }
+
+    .AboutSkills .Aboutskill {
+        gap: 30px;
+    }
+
+    .AboutSkill p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-me-container {
+        margin: 10px 20px;
+        gap: 20px;
+    }
+
+    .Apara {
+        margin-top: 5%;
+        font-size: 14px;
+    }
+
+    .AboutT h1 {
+        font-size: 40px;
+    }
+
+    .AboutSkills .Aboutskill {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .AboutSkill p {
+        font-size: 18px;
+    }
 }
